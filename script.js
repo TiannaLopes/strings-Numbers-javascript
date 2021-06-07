@@ -8,10 +8,9 @@ function task1(str){
  let len = str.length;
  let middle = len / 2;
  console.log(str.charAt(middle));
-
+ //document.getElementByClass('answer1').innerHTML = ('Banana', task1('banana'));
 }
 task1('wwordd');
-//document.getElementByClass('answer1').innerHTML = ('Banana', task1('banana'));
 
 
 // Task 2
@@ -96,8 +95,34 @@ function task3(str){
 // third l become small m
 
 function task4(str){
-
+        var word = str.split('');
+        for (var i = 0; i < word.length; i++) {
+            switch(word[i]) {
+              case ' ':
+                break;
+              case 'z':
+                word[i] = 'a';
+                break;
+              case 'Z':    
+                word[i] = 'A';
+                break;
+              default:
+                word[i] = String.fromCharCode(1 + word[i].charCodeAt(0));
+            }
+            switch(word[i]) {
+             default:
+                    if (word[i] == word[i].toLowerCase()) {
+                        word[i] = word[i].toUpperCase();
+                    }
+                    else {
+                      word[i] = word[i].toLowerCase();
+                    }
+                  }
+            }
+        
+        return word.join('');
+    
 }
 
-
+console.log(task4("TianNa"));
 //document.getElementByClass('answer4').innerHTML = ()

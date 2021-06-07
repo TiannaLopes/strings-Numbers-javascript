@@ -13,6 +13,9 @@
     text-align: center;
 }
 
+h1, h2 {
+    text-align: center;
+}
 .task1{
     background-color: #a7ffeb;
     grid-area: task1;
