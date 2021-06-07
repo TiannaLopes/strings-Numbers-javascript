@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "task1"
+      "task2"
+      "task3"
+      "task4";
+    grid-gap: 0.2rem;
+    color: #004d40;
+    text-align: center;
+}
+
+.task1{
+    background-color: #a7ffeb;
+    grid-area: task1;
+}
+.task2{
+    background: #179477;
+    grid-area: task2;
+}
+.task3{
+    background: #0e6550;
+    grid-area: task3;
+}
+.task4{
+    background: #b5e6da;
+    grid-area: task4;
+}
